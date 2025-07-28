@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive AI Mind Map</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Artificial Intelligence Mind Map</h1>
+            <div class="controls">
+                <button id="resetZoom" class="btn">Reset View</button>
+                <button id="expandAll" class="btn">Expand All</button>
+                <button id="collapseAll" class="btn">Collapse All</button>
+                <div class="mode-toggle">
+                    <label class="switch">
+                        <input type="checkbox" id="handMode">
+                        <span class="slider"></span>
+                    </label>
+                    <span>Hand Mode</span>
+                </div>
+            </div>
+        </header>
+        
+        <div id="mindmap-container">
+            <svg id="mindmap"></svg>
+        </div>
+        
+        <div class="info-panel" id="infoPanel">
+            <div class="info-content">
+                <h3 id="nodeTitle">Select a node</h3>
+                <p id="nodeDescription">Click on any node to see detailed information</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="mindmap.js"></script>
+</body>
+</html>
